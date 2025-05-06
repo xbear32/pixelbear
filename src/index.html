@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>像素熊老师</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f8f1e7;
+            color: #4a3f35;
+            text-align: center;
+        }
+
+        header {
+            padding: 20px;
+        }
+
+        header img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+
+        header h1 {
+            margin: 10px 0;
+            font-size: 24px;
+        }
+
+        header p {
+            font-size: 14px;
+            color: #6b5e55;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin: 20px 0;
+        }
+
+        .social-icons img {
+            width: 32px;
+            height: 32px;
+            cursor: pointer;
+        }
+
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin: 20px;
+        }
+
+        .link {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #fdf8f4;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            width: 100%; /* Adjust the width to match the screenshot */
+            max-width: 400px; /* Increase the maximum width */
+            margin: 0 auto; /* Center the links */
+        }
+
+        .link i:last-child {
+            display: none; /* Hide the right-side icon */
+        }
+
+        .link span {
+            flex-grow: 1;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="./image/logo.png" alt="Profile Picture">
+        <h1>像素熊老师</h1>
+        <p>著有《从零开始学像素画》，像素画爱好者，独立开发者。</p>
+    </header>
+
+    <div class="social-icons">
+        <img src="./image/哔哩哔哩.svg" alt="哔哩哔哩" title="哔哩哔哩" width="24" height="24" onclick="window.open('https://space.bilibili.com/11484264', '_blank')">
+        <img src="./image/小红书.svg" alt="小红书" title="小红书" width="32" height="32">
+        <img src="./image/公众号.svg" alt="公众号" title="公众号" width="24" height="24">
+        <img src="./image/知乎.svg" alt="知乎" title="知乎" width="24" height="24">
+
+    </div>
+
+    <div class="links">
+        <div class="link">
+            <span>《从零开始学像素画》</span>
+        </div>
+        <div class="link" onclick="window.open('https://store.steampowered.com/app/3475120/Image2pixelPixelArtGenerator', '_blank')">
+            <span>Image2pixel</span>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2025 像素熊老师. All rights reserved.</p>
+    </footer>
+</body>
+</html>
